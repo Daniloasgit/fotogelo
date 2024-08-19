@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Concert_One";
+    src: local(Concert_One), url(../public/fonts/Concert_One/ConcertOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family:"roboto";
+    src: local(roboto), url(../public/fonts/roboto/Roboto-Medium.ttf)format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+header{
+    display: flex;
+}
+
+.titulo{
+    font-size: 20px;
+    
+}
+
+.botao {
+    color: white;
+    background-color: black;
+    margin-left:auto;
+    padding: 5px 50px 5px 50px ;
+border-radius: 10px;
+height: 35px;
+}
+
+.text1{
+text-align: center;
+}
