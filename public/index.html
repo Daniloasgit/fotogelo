@@ -10,7 +10,30 @@
 
     <header>
         <h1 class="titulo">FOTOGRAFIA GELADA</h1>
-                <button class="botao">Login</button>
+<button id="botao">Login</button>
+
+<dialog id="modal">
+    <div class="container">
+        <h2>Login</h2>
+        <div class="form">
+            <label for="usuario">Nome de Usuário</label>
+            <input type="text" id="usuario" placeholder="Digite seu nome de usuário">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+        </div>
+        <div class="form">
+            <button id="botaologin">Entrar</button>
+            <button id="botaosair">Cancelar</button>
+        </div>
+    </div>
+</dialog>
+
+
+ 
+
+
 
     </header>
 <div class="separador">   
@@ -21,39 +44,115 @@
 
 
 
-
 <div class="aa">
     <div class="campohori">
         <img class="imagem-tabela"  src="./imagens/Everest.jpg" alt="Everest">
 
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like"> 
+            <span id="count-like-image1">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image1">0</span>
+            </div>
+        </div>
+
     </div>
+
+    
+
     <div class="campover">
         <img class="imagem-tabela"  src="./imagens/MonteFuji.jpg" alt="Fuji">
 
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-image2">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image2">0</span>
+            </div>
+        </div>
+
     </div>
+    
     <div class="campomim0">
         <img class="imagem-tabela"  src="./imagens/AlpesSuiços.jpg" alt="AlpesSuiços">
+
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-image3">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image3">0</span>
+            </div>
+        </div>
 
     </div>
     <div class="campomim1">
         <img class="imagem-tabela"  src="imagens/GrandCanyon.jpg" alt="GrandCanyon">
+
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-image4">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image4">0</span>
+            </div>
+        </div>
         
     </div>
     <div class="campover2">
         <img class="imagem-tabela"  src="./imagens/MonteBranco.jpg" alt="MonteBranco">
+
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-image5">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image5">0</span>
+            </div>
+        </div>
         
     </div>
     <div class="campohori2">
-        <img class="imagem-tabela"  src="./imagens/MonteElbrus.jpg" alt="MonteElbrus">         
+        <img class="imagem-tabela"  src="./imagens/MonteElbrus.jpg" alt="MonteElbrus">     
+        
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-image6">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image6">0</span>
+            </div>
+        </div>
         
     </div class="campomim2">
     <div>
         <img class="imagem-tabela"  src="./imagens/PicoPikes.jpg" alt="PicoPikes">
 
+        <div class="like">
+            <div class="icons">
+            <img src="icones/coração.svg" alt="like">
+            <span id="count-like-imag7">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image7">0</span>
+            </div>
+        </div>
+
     </div>
     <div class="campomim3">
 
         <img class="imagem-tabela"  src="imagens/Huandoy.jpg" alt="Huandoy">
+
+        <div class="like">
+            <div class="icons">
+                <img src="icones/coração.svg" alt="like">
+                <span id="count-like-image8">0</span>
+            <img src="icones/chat-branco.svg" alt="like">
+            <span id="count-comment-image8">0</span>
+            </div>
+        </div>
+
     </div>
 </div>
     
@@ -70,6 +169,8 @@
         <IMG class="logo" src="icones/tiktok.svg" class="imgred"></IMG>
         </div>
     </footer>
+
+ 
 <style>
     footer {
         background-color: black;
@@ -84,6 +185,6 @@
     }
 </style>
 
-    <script src="app.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
