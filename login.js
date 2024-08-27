@@ -1,45 +1,56 @@
 
-const button = document.querySelector("#botao");
-const modal = document.querySelector("#modal");
-const botaosair = document.querySelector("#botaosair");
+// // variaveis  de login
+// const login = getElementById(botaologin);
+// const user = getElementById(usuario);
+// const password = getElementById(senha);
+// const mensage = getElementById(mensagem);
 
-button.onclick =function () {
-    modal.Show();
-};
-
-botaosair.addEventListener('click', () => {
-    modal.close();
-});
+// // validar
+// const confUser =  "miguelamostradin";
+// const confPass = "miguelamostradin"
 
 
-// variaveis  de login
-const login = getElementById(botaologin);
-const user = getElementById(usuario);
-const password = getElementById(senha);
-const mensage = getElementById(mensagem);
+// // funcao do botao
+// const Enter = document.getElementById('botaologin');
 
-// validar
-const confUser =  "miguelamostradin";
-const confPass = "miguelamostradin"
+// // valor dos campos de login
+// botaologin.addEventListener('click', function() {
+// const user = user.Input.value.trim();
+// const password = password.trim();
 
 
-// funcao do botao
-const Enter = document.getElementById('botaologin');
+// // verificar se os dados estao corretos
+// if (user === confUser  && password === confPass){
+//     window.alert(`Bem vindo usuario: ${confUser} `)
+// }
 
-// valor dos campos de login
-botaologin.addEventListener('click', function() {
-const user = user.Input.value.trim();
-const password = password.trim();
+// else {
+//     window.alert('Você não é miguelamostradin, caí fora! ');
+// }
 
 
-// verificar se os dados estao corretos
-if (user === confUser  && password === confPass){
-    alert(`Bem vindo usuario: ${confUser} `)
-}
+// // if (user === 0  && password === 0){
+// // alert('nada foi escrevido');
+// // }
+// });
 
-else {
-    alert('Você não é miguelamostradin, caí fora! ');
-}
-});
 
+const modal = document.getElementById('area');
+
+const logar = document.getElementById('button');
+
+const cancelar = document.getElementsByClassName('botao-cancelar')[0];
+
+logar.onclick = function() {
+    modal.style.display = 'block';};
+
+    cancelar.onclick = function(){
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
 
