@@ -42,15 +42,16 @@ const logar = document.getElementById('button');
 const cancelar = document.getElementsByClassName('botao-cancelar')[0];
 
 logar.onclick = function() {
-    modal.style.display = 'block';};
+    modal.style.display = 'block'
+};
 
     cancelar.onclick = function(){
-        modal.style.display = 'none';
-    }
+        modal.style.display = 'none'
+    };
 
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
+            modal.style.display = 'none'
+        };
+    };
 
