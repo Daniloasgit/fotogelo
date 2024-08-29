@@ -35,6 +35,7 @@
 // });
 
 
+// area de login com modal
 const modal = document.getElementById('area');
 
 const logar = document.getElementById('button');
@@ -55,3 +56,41 @@ logar.onclick = function() {
         };
     };
 
+
+    // curtidas 
+    const likes = document.getElementsByClassName('icons')[0];
+    let countLike = document.getElementById('count-like-image1');
+    likes.addEventListener('click', function(){
+        countLike.textContent = parseInt(countLike.textContent) + 1;
+    });
+
+
+// let divImagem = `
+//    <div class="campohori">
+//                 <img class="imagem-tabela"  src="${public/imagens/Everst.jpg}" alt="Everest">
+
+//                     <div class="like">
+//                         <div class="icons">
+//                         <img src="icones/coração.svg" alt="like"> 
+//                         <span id="count-like-image1">0</span>
+//                         <img src="icones/chat-branco.svg" alt="like">
+//                         <span id="count-comment-image1">0</span>
+//                         </div>
+//                     </div>
+
+//     </div>
+// `
+
+const detalhes = document.getElementById('campohori');
+
+const close = document.getElementsByClassName('close-img')[0];
+
+const img01 = document.getElementsByClassName('imagem');
+
+detalhes.onclick = function() {
+img01.style.display = 'block'
+}
+
+    close.onclick = function(){
+        img01.style.display = 'none'
+    };

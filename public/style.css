@@ -224,7 +224,7 @@ margin: 0;
 }
 
 .botoes{
-    margin-left: 220px;
+    margin-left: 135px;
     margin-top: 50px;
     }
     
@@ -246,5 +246,7 @@ margin: 0;
         height: 30px; }
     
         label{
-            margin-left: 190px;
+            margin-left: 140px;
         }
+
+        
